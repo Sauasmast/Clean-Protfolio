@@ -20,13 +20,14 @@ h2:after{
     height: 3px;
     background-color:#ddc350;
     content: "";
-    width : 100px;
+    width : 150px;
     margin: 0 auto;
     margin-top: 20px;
 }
 
 /* For placing the content vertically center */
 .content-center{
+    width: 100%;
     position:absolute; 
     top: 50%;
     left: 50%;
@@ -81,8 +82,8 @@ nav a{
 }
 
 .nav-item a:hover, 
-.nav-item a:active{
-    border-bottom: 2px solid orange;
+.nav-item a:active{ 
+    border-bottom: 2px solid #ddc350;
 }
 
 /* ------------------------------------ Aboutme Box ----------------------------------------------- */
@@ -110,57 +111,91 @@ nav a{
 
 /* -------------------------------- Project Box ---------------------------------------------------*/
 .projects {
-    margin: 80px 60px;
+    margin: 60px 80px;
+}
+.pycom{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/pycom.jpg);
 }
 
-/* -------------------------------- Second and Third Page CSS --------------------------------------------------- */
+.website{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Upshaw.png);
+}
 
-/* -------------------------------- Image div --------------------------------------------------------- */
+.adruino{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Adruino.jpeg);
+}
 
-.container-of-all .row:nth-of-type(odd), .creative-efficient {
-    background-attachment: fixed; /* For time being I liked it*/
+.garmin-api{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/garmin.jpg);
+}
+
+.mini-projects{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Miniprojects.jpg);
+}
+
+.projects div:nth-child(3), .projects div:nth-child(4){
+    background-size: 100% 100%;
     background-position: center;
-    background-size: cover;
-    height: 60vh;
-    transform: scale(1.02);
+    height: 400px;
+    width: 100%;
+}
+/* -------------------------------- Get your hand dirty ------------------------------------------- */
+.dirt{
+    background:#25251f;
+    padding: 60px 80px;
+}
+
+.dirt .row >.col-md-5:nth-child(1){
+    min-height: 400px;
+}
+
+.dirt .row >.col-md-5:nth-child(2){
+    background: white;
+    padding: 30px;
+}
+/* -------------------------------- Contact Me -----------------------------------------------------*/
+
+.contact{
+    padding: 60px 80px;
+}
+
+.contact .col-md-2{
+    padding: 0px;
+}
+
+.fab{
+    color:white;
+}
+
+.contact .circle{
     position:relative;
-    }
-
-.container-of-all .row:nth-of-type(odd):hover {
-    opacity:0.95;
-    transform:scale(1);
-    transition: 1s;
-    }
-
-.text-div {
-    background-color: rgb(243, 243, 243);
-    padding: 80px 180px;
-
+    height: 100px;
+    width: 100px;
+    background: black; 
+    border-radius: 50%;
+    border: 10px solid #ddc350;
+    transition: 0.5s;
 }
 
-.patent-litigation{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/tiles.jpg);
+.contact .circle:hover{
+    background: white;
 }
 
-.anti-litigation{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/tubelight.jpg);
+.circle:hover .fab{ 
+    color:black; 
 }
 
-.corporate-ip{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/towers.jpg);
+
+/* ---------------------------------------- Quotation -----------------------------------------------*/
+.quotation{
+    background: #212121;
+    padding: 15px 80px;
 }
 
-.post-grant{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/chess.jpg);
+.blockquote{
+    font-size: 120%;
 }
-
-/* -------------------------------- Third page Only ------------------------------------------------------ */
-.creative-efficient{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/second_header_img.jpg);
-}
-
-/* -------------------------------- Resume Page (Flex display because of responsive features --------------*/
-
+/* -------------------------------- Resume (Flex display because of responsive features --------------*/
 .resume-body{
     font-size:15px;
     display:flex;
