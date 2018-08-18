@@ -1,0 +1,245 @@
+/* ------------------------------ Reuseable Components --------------------------- */
+
+.container-fluid{ 
+    padding: 0px;
+    margin : 0px;
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5{
+    font-family: 'Lobster', cursive;
+}
+
+/* For all the lines below the headings */
+h2:after{
+    display:block;
+    height: 3px;
+    background-color:#ddc350;
+    content: "";
+    width : 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* For placing the content vertically center */
+.content-center{
+    position:absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------- Header and Navbar designs --------------------------------- */
+
+.header-box {
+    background-image : linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assest/Coding.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.navbar li { color: #000 }
+
+.navbar-toggler span{
+    color:black;
+}
+
+nav a{
+    max-width: 200px;
+    margin-right: 50px;
+}
+
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+
+.nav-item a:visited, 
+.nav-item a{
+    border-bottom: 0px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-item a:hover, 
+.nav-item a:active{
+    border-bottom: 2px solid orange;
+}
+
+/* ------------------------------------ Aboutme Box ----------------------------------------------- */
+.aboutme{
+    background-color:#212121;
+    padding: 60px 80px;
+    line-height: 1.8em;
+    position:relative;
+    overflow:hidden;
+}
+
+.aboutme-photo{
+    height:200px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.aboutme span{
+    font-family: 'Lobster', cursive;
+    font-size: 90%;
+    line-height: 0.1em !important;
+
+}
+
+
+/* -------------------------------- Project Box ---------------------------------------------------*/
+.projects {
+    margin: 80px 60px;
+}
+
+/* -------------------------------- Second and Third Page CSS --------------------------------------------------- */
+
+/* -------------------------------- Image div --------------------------------------------------------- */
+
+.container-of-all .row:nth-of-type(odd), .creative-efficient {
+    background-attachment: fixed; /* For time being I liked it*/
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    transform: scale(1.02);
+    position:relative;
+    }
+
+.container-of-all .row:nth-of-type(odd):hover {
+    opacity:0.95;
+    transform:scale(1);
+    transition: 1s;
+    }
+
+.text-div {
+    background-color: rgb(243, 243, 243);
+    padding: 80px 180px;
+
+}
+
+.patent-litigation{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/tiles.jpg);
+}
+
+.anti-litigation{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/tubelight.jpg);
+}
+
+.corporate-ip{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/towers.jpg);
+}
+
+.post-grant{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/chess.jpg);
+}
+
+/* -------------------------------- Third page Only ------------------------------------------------------ */
+.creative-efficient{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/second_header_img.jpg);
+}
+
+/* -------------------------------- Resume Page (Flex display because of responsive features --------------*/
+
+.resume-body{
+    font-size:15px;
+    display:flex;
+    flex-wrap: wrap-reverse;
+}
+
+.resume-body li{
+    padding : 10px;
+}
+
+.container-side1{
+    flex-basis: 30%;
+    flex-grow: 1;
+    min-width: 300px;
+    margin-right: 4%;
+}
+
+.container-side2{
+    flex-basis: 66%;
+    flex-grow: 1;
+}
+
+/* Container1 property */
+.container-side1>div{
+    background-color: white;
+    margin-bottom: 10px;
+    border-top: 5px solid #ddc350;
+    padding: 10px;
+}
+
+.container-side1 h5{
+    padding: 10px;
+    border-bottom : 1px solid grey;
+}
+
+/* Container2 property */
+
+.container-side2>div{
+    margin-bottom: 25px;
+}
+
+.name{
+    border-top: 1px solid #ddc350;
+    border-bottom: 1px solid #ddc350;
+    padding-top: 10px;
+}
+
+.container-side2 h5 {
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddc350;
+}
+
+.name h5{
+ padding: 0px;
+ border-bottom : 0px solid transparent;
+}
+.container-side1 ul {
+    list-style-type:none;
+    padding: 0px;
+}
+.container-side1>div>ul>li{
+    border-bottom: 0.5px dotted grey;
+}
+
+.container-side1>div>ul>li:last-child{
+    border-bottom: 0px solid transparent;
+}
+
+.photos{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:0px !important;
+}
+
+.photos img{
+    margin-right: 15px;
+}
+
+.info {
+line-height: 1.7em;
+}
