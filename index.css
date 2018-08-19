@@ -107,6 +107,43 @@ nav a{
 
 }
 
+/* ----------------------------------------- Animation for skills -----------------------------------*/
+
+.big-line{
+    background: white;
+    height: 10px;
+    width: 100%;
+    position:relative;
+}
+
+.big-line:after{
+    content:'';
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+    height: 10px;
+    animation: animate 4s forwards;
+}
+
+.big-line1:after{
+    max-width: 90%;
+}
+
+.big-line2:after{
+    max-width: 40%;
+}
+
+
+/* ------------------------------------- Animations  ---------------------------------------------*/
+@keyframes animate{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 
 /* -------------------------------- Project Box ---------------------------------------------------*/
 .projects {
