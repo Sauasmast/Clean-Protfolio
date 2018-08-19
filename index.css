@@ -102,7 +102,6 @@ nav a{
 }
 
 .aboutme span{
-    font-family: 'Lobster', cursive;
     font-size: 90%;
     line-height: 0.1em !important;
 
@@ -113,6 +112,7 @@ nav a{
 .projects {
     margin: 60px 80px;
 }
+
 .pycom{
     background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/pycom.jpg);
 }
@@ -126,19 +126,61 @@ nav a{
 }
 
 .garmin-api{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/garmin.jpg);
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/garmin.png);
 }
 
 .mini-projects{
     background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Miniprojects.jpg);
 }
 
-.projects div:nth-child(3), .projects div:nth-child(4){
-    background-size: 100% 100%;
-    background-position: center;
+.projects .row:nth-child(3), .projects .row:nth-child(4){
     height: 400px;
     width: 100%;
 }
+
+.pycom, .adruino, .website, .garmin-api, .mini-projects{
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+
+/* ------------------------------------------------- Information Page -------------------------- */
+.information{
+    background-color:#25251f;
+    height: 100%;
+    width: 100%;
+    display:none;
+}
+
+.list-group-item{
+    font-size: 80%;
+    height: 40px;
+}
+
+/* ------------------------------------------ Animation for a display page ------------------------ */
+.pycom:hover .information{
+    display:block;
+}
+
+.website:hover .information{
+    display:block;
+}
+
+.adruino:hover .information{
+    display:block;
+}
+
+.garmin-api:hover .information{
+    display:block;
+}
+
+.mini-projects:hover .information{
+    display:block;
+}
+
+
+
+
 /* -------------------------------- Get your hand dirty ------------------------------------------- */
 .dirt{
     background:#25251f;
