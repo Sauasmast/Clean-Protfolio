@@ -39,6 +39,11 @@ img{
     height: auto;
 }
 
+.list-group-item{
+    font-size: 80%;
+    height: 40px;
+}
+
 /* ------------------------------- Header and Navbar designs --------------------------------- */
 
 .header-box {
@@ -104,10 +109,14 @@ nav a{
 .aboutme span{
     font-size: 90%;
     line-height: 0.1em !important;
-
 }
 
-/* ----------------------------------------- Animation for skills -----------------------------------*/
+.aboutme .list-group-item{
+    font-size: 100%;
+}
+
+
+   /* ----------------------------------------- Animation for skills -----------------------------------*/
 
 .big-line{
     background: white;
@@ -127,10 +136,34 @@ nav a{
 }
 
 .big-line1:after{
-    max-width: 90%;
+    max-width: 60%;
 }
 
 .big-line2:after{
+    max-width: 75%;
+}
+
+.big-line3:after{
+    max-width: 100%;
+}
+
+.big-line4:after{
+    max-width: 100%;
+}
+
+.big-line5:after{
+    max-width: 50%;
+}
+
+.big-line6:after{
+    max-width: 60%;
+}
+
+.big-line7:after{
+    max-width: 40%;
+}
+
+.big-line8:after{
     max-width: 40%;
 }
 
@@ -187,11 +220,6 @@ nav a{
     height: 100%;
     width: 100%;
     display:none;
-}
-
-.list-group-item{
-    font-size: 80%;
-    height: 40px;
 }
 
 /* ------------------------------------------ Animation for a display page ------------------------ */
