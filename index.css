@@ -1,5 +1,14 @@
 /* ------------------------------ Reuseable Components --------------------------- */
 
+body{
+    padding: 0px;
+    margin : 0px;
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 .container-fluid{ 
     padding: 0px;
     margin : 0px;
@@ -9,9 +18,21 @@
     overflow-x: hidden;
 }
 
+h1{
+    font-size: 200%;
+}
+
+h2{
+    font-size: 180%;
+}
+
+h3{
+    font-size: 150%;
+}
 
 h1, h2, h3, h4, h5{
     font-family: 'Lobster', cursive;
+    font-weight: bold;
 }
 
 /* For all the lines below the headings */
@@ -125,7 +146,7 @@ nav a{
     position:relative;
 }
 
-.big-line:after{
+.big-line.animation:after{
     content:'';
     position:absolute;
     left: 0px;
@@ -167,7 +188,6 @@ nav a{
     max-width: 40%;
 }
 
-
 /* ------------------------------------- Animations  ---------------------------------------------*/
 @keyframes animate{
     0%{
@@ -203,15 +223,13 @@ nav a{
     background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Miniprojects.jpg);
 }
 
-.projects .row:nth-child(3), .projects .row:nth-child(4){
-    height: 400px;
-    width: 100%;
-}
-
 .pycom, .adruino, .website, .garmin-api, .mini-projects{
     background-size: cover;
     background-position: center;
     padding: 0px;
+    position:relative;
+    height: 350px;
+    width: 100%;
 }
 
 /* ------------------------------------------------- Information Page -------------------------- */
@@ -243,20 +261,13 @@ nav a{
     display:block;
 }
 
-
-
-
 /* -------------------------------- Get your hand dirty ------------------------------------------- */
 .dirt{
     background:#25251f;
     padding: 60px 80px;
 }
 
-.dirt .row >.col-md-5:nth-child(1){
-    min-height: 400px;
-}
-
-.dirt .row >.col-md-5:nth-child(2){
+.dirt>.row:nth-child(2)>div:nth-child(2){
     background: white;
     padding: 30px;
 }
@@ -304,13 +315,24 @@ nav a{
 }
 
 /* ---------------------------------------------- Animation ----------------------------------------- */
-.js-animate-1{
+.js-animate-1, 
+.js-animate-2,
+.js-animate-3,
+.js-animate-4,
+.js-animate-5,
+.contact .row:nth-child(3)>div{
     opacity:0;
 }
 
-.js-animate-1 animated{
-    opacity: 1;
+.js-animate-1.animated, 
+.js-animate-2.animated,
+.js-animate-3.animated,
+.js-animate-4.animated,
+.js-animate-5.animated,
+.contact .row:nth-child(3)>div.animated{
+    opacity:1;
 }
+
 
 /* -------------------------------- Resume (Flex display because of responsive features --------------*/
 .resume-body{
@@ -397,3 +419,102 @@ line-height: 1.7em;
 }
 
 
+
+/* ---------------------------------------- Media Responsive -------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .js-animate-4{
+        font-size: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .contact, .aboutme , .dirt{
+        padding: 60px 60px;
+    }
+    .js-animate-4{
+        font-size: 75%;
+    }
+
+    h3{
+        font-size: 120%;
+    }
+
+.pycom, .adruino, .website, .garmin-api, .mini-projects{
+        height: 300px;
+    }
+}
+
+/*----------------------------- What's keeping me busy --------------------------*/
+@media only screen and (max-width: 786px) {
+    .js-animate-4{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .js-animate-4{
+        font-size: 100%;
+    }
+
+    div.dirt > div:nth-child(2) > div:nth-child(1) > div{
+        position:relative;
+        margin-bottom: 50px;
+    }
+
+    .pycom, .adruino, .website, .garmin-api, .mini-projects{
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-size: 150%;
+    }
+
+    h2{
+        font-size: 150%;
+    }
+
+    h3{
+        font-size: 150%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .container-fluid{ 
+        font-size: 16px;
+    }
+
+    .contact{
+        padding: 40px;
+    }
+
+    .blockquote{
+        font-size: 100%;
+    }
+
+    .quotation{
+        background: #212121;
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 150%;
+    }
+
+    h2{
+        font-size: 125%;
+    }
+
+    h4{
+        font-size: 115%;
+    }
+
+    nav a{
+        max-width: 150px;
+        margin-right: 50px;
+    }
+}

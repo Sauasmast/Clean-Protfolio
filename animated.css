@@ -2361,6 +2361,7 @@
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes rotateInDownLeft {
