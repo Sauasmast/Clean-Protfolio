@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="./assest/favicon/favicon.ico">
 
-    <title> Protfolio Saugat </title>
+    <title> Protfolio </title>
+
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="description" content="Saugat Dahal is currently an international student in Caldwell University, studying computer science and mathematics.">
     
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -22,6 +26,16 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Muli" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
+
+    <!-- Fav Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assest/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assest/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assest/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assest/favicon/manifest.json">
+    <link rel="mask-icon" href="/assest/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assest/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/assest/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
   </head>
 
@@ -62,18 +76,8 @@
           </div>
 
           <div class="row">
-              <div class="content-center col-12">
-                <div class ="row">
-                  <div class="col-12 text-center mx-auto"> 
-                    <h1 class="text-white text-uppercase"> Welcome to the World Of: </h1>
-                  </div> 
-                </div>
-
-                <div class ="row">
-                  <div class="col-12 text-center mx-auto"> 
-                    <h1 class="text-white"> SAUASMAST </h1>
-                  </div> 
-                </div>
+              <div class="content-center col-12 text-center">
+                    <h1 class="text-white text-uppercase js-type"> </h1>
               </div>
             </div>
           </div>
@@ -101,8 +105,10 @@
           <div class="row mb-3 js-animate-3">
             <div class="col-md-12 mx-auto">
               <p class="text-justify text-white"> 
-              HOLA !!! Myself Saugat Dahal, a senior at Caldwell University pursing by Bachelor's degree on
-              Comuter Information System and Mathematics. 
+               Myself Saugat Dahal, senior at Caldwell University pursuing my Bachelor's degree on Computer Information System and Mathematics. I am software 
+               and web developer enthusiast. Engaged in different personal project during my time, I am actively seeking for an internships. I challange myself each 
+               and every day. I have tried my best to achieve what I seek and have almost got everything. I am greatful to god for this wonderful life. Keep smiling and be happy.
+               Everything will be alright one day. 
               </p>
             </div>
             </div>
@@ -290,20 +296,27 @@
               </div>
             
               <div class="col-12">
-                <p class="text-white text-justify"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+                <p class="text-white text-justify">
+                        <p class="mb-0 text-white text-justify"> If you are not learning you are not growing. As Mahatma Ghandi once said,<q> Live as if 
+                          you were to die tommorrow. Learn as if you were to live forever.</q> I have a hunger to learn new stuff 
+                          everyday. If you need a hand with the open projects or if you are looking people for internship, please feel 
+                          free to leave a message. I will get back to you asap. Enjoy Coding <i class="far fa-smile"></i> </p>
+                </p>
               </div>
 
-                <div class="col-12 text-center">
-                  <a class="btn btn-danger text-white "> Online Resume </a>
+                <div class="col-12 text-center rightguy js-animate-8">
+                  <p class="text-white"> Don't feel like I am the right guy
+                  <br/> 
+                  Check out my Resume
+                  </p class="text-white">
+                  <a class="btn btn-danger text-white" href="./Resume.pdf" download> Resume </a>
                 </div>
           </div>
           </div>
 
             <div class="col-lg-5 col-md-6 mx-auto">
-              <h3 class="text-uppercase mb-3 text-center font-weight-bold"> <i class="far fa-smile-wink"></i> Fill it out : </h3>
-              <form>
+              <h3 class="text-uppercase mb-3 text-center font-weight-bold" id="change"> <i class="far fa-smile-wink"></i> Fill it out : </h3>
+              <form method="post" enctype="text/plain" id="feedback-form">
                   <div class="form-group">
                     <label for="name"> Name: </label>
                     <input type="text" class="form-control" id="name" placeholder="Your Beautiful Name" required>
@@ -315,11 +328,11 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="Message"> Message: </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your opinion does matter to me !!!" required></textarea>
+                    <label for="message"> Message: </label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your opinion does matter to me !!!" required></textarea>
                   </div>
 
-                  <button type="submit" class="btn btn-primary text-center">Submit</button> 
+                  <button type="button" id="feedback-btn" class="btn btn-primary text-center">Submit</button> 
                 </form>
 
             </div>
@@ -403,7 +416,15 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="./jquery.waypoints.min.js"></script>
   <script src="./index.js"></script>
 
   </html>
+
+  <!-- Like to give credits to two different javscript library and  one css library
+  1) animated.css 
+  2) JQuery Waypoints
+  3) Typed.js (www.mattboldt.com)
+  Thank you guys. 
+  -->

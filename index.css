@@ -19,7 +19,7 @@ body{
 }
 
 h1{
-    font-size: 200%;
+    font-size: 250%;
 }
 
 h2{
@@ -271,6 +271,12 @@ nav a{
     background: white;
     padding: 30px;
 }
+
+.rightguy{
+    border: 5px solid white; 
+    border-radius:20px; 
+    padding:10px;
+}
 /* -------------------------------- Contact Me -----------------------------------------------------*/
 
 .contact{
@@ -320,6 +326,7 @@ nav a{
 .js-animate-3,
 .js-animate-4,
 .js-animate-5,
+.js-animate-8,
 .contact .row:nth-child(3)>div{
     opacity:0;
 }
@@ -329,6 +336,7 @@ nav a{
 .js-animate-3.animated,
 .js-animate-4.animated,
 .js-animate-5.animated,
+.js-animate-8.animated,
 .contact .row:nth-child(3)>div.animated{
     opacity:1;
 }
