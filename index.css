@@ -1,15 +1,6 @@
 /* ------------------------------ Reuseable Components --------------------------- */
 
-body{
-    padding: 0px;
-    margin : 0px;
-    font-size: 18px;
-    font-family: 'Muli', sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-.container-fluid{ 
+html, body, .container-fluid{
     padding: 0px;
     margin : 0px;
     font-size: 18px;
@@ -157,11 +148,11 @@ nav a{
 }
 
 .big-line1:after{
-    max-width: 60%;
+    max-width: 85%;
 }
 
 .big-line2:after{
-    max-width: 75%;
+    max-width: 85%;
 }
 
 .big-line3:after{
@@ -173,19 +164,19 @@ nav a{
 }
 
 .big-line5:after{
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .big-line6:after{
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .big-line7:after{
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .big-line8:after{
-    max-width: 40%;
+    max-width: 65%;
 }
 
 /* ------------------------------------- Animations  ---------------------------------------------*/
@@ -449,8 +440,13 @@ line-height: 1.7em;
         font-size: 120%;
     }
 
-.pycom, .adruino, .website, .garmin-api, .mini-projects{
-        height: 300px;
+    div.dirt > div:nth-child(2) > div:nth-child(1) > div{
+        position:relative;
+        margin-bottom: 50px;
+    }
+
+    .pycom, .adruino, .website, .garmin-api, .mini-projects{
+            height: 300px;
     }
 }
 
@@ -465,11 +461,6 @@ line-height: 1.7em;
 
     .js-animate-4{
         font-size: 100%;
-    }
-
-    div.dirt > div:nth-child(2) > div:nth-child(1) > div{
-        position:relative;
-        margin-bottom: 50px;
     }
 
     .pycom, .adruino, .website, .garmin-api, .mini-projects{
