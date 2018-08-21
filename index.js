@@ -14,6 +14,11 @@ $(document).ready(function(){
         
 });
 
+/* For reloading the page */
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 /* For Scrolling to the specific points */
 $('.js-scroll-me').click(function(){
     $('html,body').animate({scrollTop:$('.aboutme').offset().top},1000);
@@ -77,9 +82,11 @@ $('#feedback-btn').click(function(){
            success: function (){
              $('#feedback-form').fadeOut(300, function()
                                          { $(this).remove();
+                                           $('#change').remove();
                                          });
-              $('#change').hide().html("<h1> Thank you </h1>").fadeIn('slow');
-          },
+              $('.js-show').css("display","block").addClass('content-center').fadeIn('slow');
+              $('div.dirt > div:nth-child(2) > div:nth-child(1) > div').css("position","relative");
+},
           error: function(jqXHR, textStatus, errorThrown) {
              console.log(textStatus, errorThrown);
           }            

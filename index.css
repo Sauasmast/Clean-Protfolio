@@ -203,7 +203,7 @@ nav a{
 }
 
 .adruino{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Adruino.jpeg);
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Adruino.jpg);
 }
 
 .garmin-api{
@@ -267,6 +267,10 @@ nav a{
     border: 5px solid white; 
     border-radius:20px; 
     padding:10px;
+}
+
+.js-show{
+    display:none;
 }
 /* -------------------------------- Contact Me -----------------------------------------------------*/
 
