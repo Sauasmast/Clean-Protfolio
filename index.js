@@ -56,7 +56,7 @@ $('.js-animate-7').waypoint(function(direction){
 
 $('.js-animate-8').waypoint(function(direction){
     $('.js-animate-8').addClass('animated fadeInUpBig');
-},{offset: '60%'});
+},{offset: '80%'});
 
 
 $('#feedback-btn').click(function(){
