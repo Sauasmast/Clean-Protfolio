@@ -157,11 +157,11 @@ nav a{
 }
 
 .big-line1:after{
-    max-width: 60%;
+    max-width: 95%;
 }
 
 .big-line2:after{
-    max-width: 75%;
+    max-width: 95%;
 }
 
 .big-line3:after{
@@ -173,19 +173,19 @@ nav a{
 }
 
 .big-line5:after{
-    max-width: 50%;
+    max-width: 95%;
 }
 
 .big-line6:after{
-    max-width: 60%;
+    max-width: 95%;
 }
 
 .big-line7:after{
-    max-width: 40%;
+    max-width: 95%;
 }
 
 .big-line8:after{
-    max-width: 40%;
+    max-width: 95%;
 }
 
 /* ------------------------------------- Animations  ---------------------------------------------*/

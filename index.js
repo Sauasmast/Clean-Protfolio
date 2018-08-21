@@ -5,7 +5,7 @@ $(document).ready(function(){
     }, 500);
 
     var typed3 = new Typed('.js-type', {
-        strings: ['Glitch', 'Hi It\'s me:  Sauasmast','Hi It\'s me: Saugat', ' Software and Web Developer enthusiast', 'Check out my protfolio','Feedbacks are highly appreciated'],
+        strings: ['Glitch', 'Hi It\'s me:  Sauasmast','Hi It\'s me: Saugat', ' Programmer and Web Designer', 'IOT Developer', 'Check out my protfolio','Reach out'],
         typeSpeed: 100,
         backSpeed: 100,
         smartBackspace: true, // this is a default
