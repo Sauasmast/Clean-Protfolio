@@ -218,12 +218,16 @@ nav a{
     background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Book_Image.jpg);
 }
 
-.pycom, .adruino, .website, .garmin-api, .mini-projects, .book-project{
+.cook-me{
+    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Book_Image.jpg);
+}
+
+.pycom, .adruino, .website, .garmin-api, .mini-projects, .book-project, .cook-me{
     background-size: cover;
     background-position: center;
     padding: 0px;
     position:relative;
-    height: 350px;
+    height: 350px !important;
     width: 100%;
 }
 
@@ -257,6 +261,10 @@ nav a{
 }
 
 .book-project:hover .information{
+    display:block;
+}
+
+.cook-me:hover .information{
     display:block;
 }
 
@@ -436,7 +444,7 @@ line-height: 1.7em;
 @media only screen and (max-width: 1200px) {
     .js-animate-4{
         font-size: 90%;
-    }
+    } 
 }
 
 
@@ -475,7 +483,7 @@ line-height: 1.7em;
         font-size: 100%;
     }
 
-    .pycom, .adruino, .website, .garmin-api, .mini-projects{
+    .pycom, .adruino, .website, .garmin-api, .mini-projects, .book-project{
         height: 300px;
         margin-bottom: 10px;
     }
