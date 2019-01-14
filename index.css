@@ -1,545 +1,587 @@
 /* ------------------------------ Reuseable Components --------------------------- */
 
-html, body, .container-fluid{
-    padding: 0px;
-    margin : 0px;
-    font-size: 18px;
-    font-family: 'Muli', sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
+html,
+body,
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-h1{
-    font-size: 250%;
+h1 {
+  font-size: 250%;
 }
 
-h2{
-    font-size: 180%;
+h2 {
+  font-size: 180%;
 }
 
-h3{
-    font-size: 150%;
+h3 {
+  font-size: 150%;
 }
 
-h1, h2, h3, h4, h5{
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
 }
 
 /* For all the lines below the headings */
-h2:after{
-    display:block;
-    height: 3px;
-    background-color:#ddc350;
-    content: "";
-    width : 150px;
-    margin: 0 auto;
-    margin-top: 20px;
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: #ddc350;
+  content: "";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
 
 /* For placing the content vertically center */
-.content-center{
-    width: 100%;
-    position:absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.content-center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.list-group-item{
-    font-size: 80%;
-    height: 40px;
+.list-group-item {
+  font-size: 80%;
+  height: 40px;
 }
 
 /* ------------------------------- Header and Navbar designs --------------------------------- */
 
 .header-box {
-    background-image : linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assest/Coding.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    padding: 20px 20px;
-    position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assest/Coding.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  padding: 20px 20px;
+  position: relative;
 }
 
 .navbar {
-    background-color: transparent;
-    width: 100%;
+  background-color: transparent;
+  width: 100%;
 }
 
-.navbar-toggler{
-    background-color: white;
+.navbar-toggler {
+  background-color: white;
 }
 
-.navbar li { color: #000 }
-
-.navbar-toggler span{
-    color:black;
+.navbar li {
+  color: #000;
 }
 
-nav a{
-    max-width: 200px;
-    margin-right: 50px;
+.navbar-toggler span {
+  color: black;
 }
 
-#navbarSupportedContent{
-    justify-content: flex-end;
+nav a {
+  max-width: 200px;
+  margin-right: 50px;
 }
 
-.nav-item a:visited, 
-.nav-item a{
-    border-bottom: 0px solid transparent;
-    transition: border-bottom 0.5s;
+#navbarSupportedContent {
+  justify-content: flex-end;
 }
 
-.nav-item a:hover, 
-.nav-item a:active{ 
-    border-bottom: 2px solid #ddc350;
+.nav-item a:visited,
+.nav-item a {
+  border-bottom: 0px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  border-bottom: 2px solid #ddc350;
 }
 
 /* ------------------------------------ Aboutme Box ----------------------------------------------- */
-.aboutme{
-    background-color:#212121;
-    padding: 60px 80px;
-    line-height: 1.8em;
-    position:relative;
-    overflow:hidden;
+.aboutme {
+  background-color: #212121;
+  padding: 60px 80px;
+  line-height: 1.8em;
+  position: relative;
+  overflow: hidden;
 }
 
-.aboutme-photo{
-    height:200px;
-    width: auto;
-    border-radius: 50%;
+.aboutme-photo {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
 }
 
-.aboutme span{
-    font-size: 90%;
-    line-height: 0.1em !important;
+.aboutme span {
+  font-size: 90%;
+  line-height: 0.1em !important;
 }
 
-.aboutme .list-group-item{
-    font-size: 100%;
+.aboutme .list-group-item {
+  font-size: 100%;
 }
 
+/* ----------------------------------------- Animation for skills -----------------------------------*/
 
-   /* ----------------------------------------- Animation for skills -----------------------------------*/
-
-.big-line{
-    background: white;
-    height: 10px;
-    width: 100%;
-    position:relative;
+.big-line {
+  background: white;
+  height: 10px;
+  width: 100%;
+  position: relative;
 }
 
-.big-line.animation:after{
-    content:'';
-    position:absolute;
-    left: 0px;
-    top: 0px;
-    background-color: red;
-    height: 10px;
-    animation: animate 4s forwards;
+.big-line.animation:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: red;
+  height: 10px;
+  animation: animate 4s forwards;
 }
 
-.big-line1:after{
-    max-width: 85%;
+.big-line1:after {
+  max-width: 85%;
 }
 
-.big-line2:after{
-    max-width: 85%;
+.big-line2:after {
+  max-width: 85%;
 }
 
-.big-line3:after{
-    max-width: 100%;
+.big-line3:after {
+  max-width: 100%;
 }
 
-.big-line4:after{
-    max-width: 100%;
+.big-line4:after {
+  max-width: 100%;
 }
 
-.big-line5:after{
-    max-width: 80%;
+.big-line5:after {
+  max-width: 80%;
 }
 
-.big-line6:after{
-    max-width: 80%;
+.big-line6:after {
+  max-width: 80%;
 }
 
-.big-line7:after{
-    max-width: 70%;
+.big-line7:after {
+  max-width: 70%;
 }
 
-.big-line8:after{
-    max-width: 65%;
+.big-line8:after {
+  max-width: 65%;
 }
 
 /* ------------------------------------- Animations  ---------------------------------------------*/
-@keyframes animate{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* -------------------------------- Project Box ---------------------------------------------------*/
 .projects {
-    padding: 60px 80px;
+  padding: 60px 80px;
 }
 
-.pycom{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/pycom.jpg);
+.pycom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/pycom.jpg);
 }
 
-.website{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Upshaw.png);
+.website {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/Upshaw.png);
 }
 
-.adruino{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Adruino.jpg);
+.adruino {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/Adruino.jpg);
 }
 
-.garmin-api{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/garmin.png);
+.garmin-api {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/garmin.png);
 }
 
-.mini-projects{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Miniprojects.jpg);
+.mini-projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/Miniprojects.jpg);
 }
 
-.book-project{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Book_Image.jpg);
+.book-project {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/Book_Image.jpg);
 }
 
-.cook-me{
-    background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assest/Book_Image.jpg);
+.cook-me {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/food.jpg);
 }
 
-.pycom, .adruino, .website, .garmin-api, .mini-projects, .book-project, .cook-me{
-    background-size: cover;
-    background-position: center;
-    padding: 0px;
-    position:relative;
-    height: 350px !important;
-    width: 100%;
+.dataalgo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/coding_algo.jpg);
+}
+
+.fullstack {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assest/party.jpg);
+}
+
+.pycom,
+.adruino,
+.website,
+.garmin-api,
+.mini-projects,
+.book-project,
+.cook-me,
+.dataalgo,
+.fullstack {
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+  position: relative;
+  height: 350px !important;
+  width: 100%;
 }
 
 /* ------------------------------------------------- Information Page -------------------------- */
-.information{
-    background-color:#25251f;
-    height: 100%;
-    width: 100%;
-    display:none;
+.information {
+  background-color: #25251f;
+  height: 100%;
+  width: 100%;
+  display: none;
 }
 
 /* ------------------------------------------ Animation for a display page ------------------------ */
-.pycom:hover .information{
-    display:block;
+.pycom:hover .information {
+  display: block;
 }
 
-.website:hover .information{
-    display:block;
+.website:hover .information {
+  display: block;
 }
 
-.adruino:hover .information{
-    display:block;
+.adruino:hover .information {
+  display: block;
 }
 
-.garmin-api:hover .information{
-    display:block;
+.garmin-api:hover .information {
+  display: block;
 }
 
-.mini-projects:hover .information{
-    display:block;
+.mini-projects:hover .information {
+  display: block;
 }
 
-.book-project:hover .information{
-    display:block;
+.book-project:hover .information {
+  display: block;
 }
 
-.cook-me:hover .information{
-    display:block;
+.cook-me:hover .information {
+  display: block;
+}
+
+.dataalgo:hover .information {
+  display: block;
+}
+
+.fullstack:hover .information {
+  display: block;
 }
 
 /* -------------------------------- Get your hand dirty ------------------------------------------- */
-.dirt{
-    background:#25251f;
-    padding: 60px 80px;
+.dirt {
+  background: #25251f;
+  padding: 60px 80px;
 }
 
-.dirt>.row:nth-child(2)>div:nth-child(2){
-    background: white;
-    padding: 30px;
+.dirt > .row:nth-child(2) > div:nth-child(2) {
+  background: white;
+  padding: 30px;
 }
 
-.rightguy{
-    border: 5px solid white; 
-    border-radius:20px; 
-    padding:10px;
+.rightguy {
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.js-show{
-    display:none;
+.js-show {
+  display: none;
 }
 /* -------------------------------- Contact Me -----------------------------------------------------*/
 
-.contact{
-    padding: 60px 80px;
+.contact {
+  padding: 60px 80px;
 }
 
-.contact .col-md-2{
-    padding: 0px;
+.contact .col-md-2 {
+  padding: 0px;
 }
 
-.fab{
-    color:white;
+.fab {
+  color: white;
 }
 
-.contact .circle{
-    position:relative;
-    height: 100px;
-    width: 100px;
-    background: black; 
-    border-radius: 50%;
-    border: 10px solid #ddc350;
-    transition: 0.5s;
+.contact .circle {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: black;
+  border-radius: 50%;
+  border: 10px solid #ddc350;
+  transition: 0.5s;
 }
 
-.contact .circle:hover{
-    background: white;
+.contact .circle:hover {
+  background: white;
 }
 
-.circle:hover .fab{ 
-    color:black; 
+.circle:hover .fab {
+  color: black;
 }
-
 
 /* ---------------------------------------- Quotation -----------------------------------------------*/
-.quotation{
-    background: #212121;
-    padding: 15px 80px;
+.quotation {
+  background: #212121;
+  padding: 15px 80px;
 }
 
-.blockquote{
-    font-size: 120%;
+.blockquote {
+  font-size: 120%;
 }
 
 /* ---------------------------------------------- Animation ----------------------------------------- */
-.js-animate-1, 
+.js-animate-1,
 .js-animate-2,
 .js-animate-3,
 .js-animate-4,
 .js-animate-5,
 .js-animate-8,
-.contact .row:nth-child(3)>div{
-    opacity:0;
+.contact .row:nth-child(3) > div {
+  opacity: 0;
 }
 
-.js-animate-1.animated, 
+.js-animate-1.animated,
 .js-animate-2.animated,
 .js-animate-3.animated,
 .js-animate-4.animated,
 .js-animate-5.animated,
 .js-animate-8.animated,
-.contact .row:nth-child(3)>div.animated{
-    opacity:1;
+.contact .row:nth-child(3) > div.animated {
+  opacity: 1;
 }
-
 
 /* -------------------------------- Resume (Flex display because of responsive features --------------*/
-.resume-body{
-    font-size:15px;
-    display:flex;
-    flex-wrap: wrap-reverse;
+.resume-body {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 
-.resume-body li{
-    padding : 10px;
+.resume-body li {
+  padding: 10px;
 }
 
-.container-side1{
-    flex-basis: 30%;
-    flex-grow: 1;
-    min-width: 300px;
-    margin-right: 4%;
+.container-side1 {
+  flex-basis: 30%;
+  flex-grow: 1;
+  min-width: 300px;
+  margin-right: 4%;
 }
 
-.container-side2{
-    flex-basis: 66%;
-    flex-grow: 1;
+.container-side2 {
+  flex-basis: 66%;
+  flex-grow: 1;
 }
 
 /* Container1 property */
-.container-side1>div{
-    background-color: white;
-    margin-bottom: 10px;
-    border-top: 5px solid #ddc350;
-    padding: 10px;
+.container-side1 > div {
+  background-color: white;
+  margin-bottom: 10px;
+  border-top: 5px solid #ddc350;
+  padding: 10px;
 }
 
-.container-side1 h5{
-    padding: 10px;
-    border-bottom : 1px solid grey;
+.container-side1 h5 {
+  padding: 10px;
+  border-bottom: 1px solid grey;
 }
 
 /* Container2 property */
 
-.container-side2>div{
-    margin-bottom: 25px;
+.container-side2 > div {
+  margin-bottom: 25px;
 }
 
-.name{
-    border-top: 1px solid #ddc350;
-    border-bottom: 1px solid #ddc350;
-    padding-top: 10px;
+.name {
+  border-top: 1px solid #ddc350;
+  border-bottom: 1px solid #ddc350;
+  padding-top: 10px;
 }
 
 .container-side2 h5 {
-    padding: 15px 0px;
-    border-bottom: 1px solid #ddc350;
+  padding: 15px 0px;
+  border-bottom: 1px solid #ddc350;
 }
 
-.name h5{
- padding: 0px;
- border-bottom : 0px solid transparent;
+.name h5 {
+  padding: 0px;
+  border-bottom: 0px solid transparent;
 }
 .container-side1 ul {
-    list-style-type:none;
-    padding: 0px;
+  list-style-type: none;
+  padding: 0px;
 }
-.container-side1>div>ul>li{
-    border-bottom: 0.5px dotted grey;
-}
-
-.container-side1>div>ul>li:last-child{
-    border-bottom: 0px solid transparent;
+.container-side1 > div > ul > li {
+  border-bottom: 0.5px dotted grey;
 }
 
-.photos{
-    display: flex;
-    align-items:center;
-    flex-wrap:wrap;
-    margin:0px !important;
+.container-side1 > div > ul > li:last-child {
+  border-bottom: 0px solid transparent;
 }
 
-.photos img{
-    margin-right: 15px;
+.photos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px !important;
+}
+
+.photos img {
+  margin-right: 15px;
 }
 
 .info {
-line-height: 1.7em;
+  line-height: 1.7em;
 }
-
-
 
 /* ---------------------------------------- Media Responsive -------------------------------- */
 
 @media only screen and (max-width: 1200px) {
-    .js-animate-4{
-        font-size: 90%;
-    } 
+  .js-animate-4 {
+    font-size: 90%;
+  }
 }
 
-
 @media only screen and (max-width: 992px) {
-    .contact, .aboutme , .dirt{
-        padding: 60px 60px;
-    }
-    .js-animate-4{
-        font-size: 75%;
-    }
+  .contact,
+  .aboutme,
+  .dirt {
+    padding: 60px 60px;
+  }
+  .js-animate-4 {
+    font-size: 75%;
+  }
 
-    h3{
-        font-size: 120%;
-    }
+  h3 {
+    font-size: 120%;
+  }
 
-    div.dirt > div:nth-child(2) > div:nth-child(1) > div{
-        position:relative;
-        margin-bottom: 50px;
-    }
+  div.dirt > div:nth-child(2) > div:nth-child(1) > div {
+    position: relative;
+    margin-bottom: 50px;
+  }
 
-    .pycom, .adruino, .website, .garmin-api, .mini-projects{
-            height: 300px;
-    }
+  .pycom,
+  .adruino,
+  .website,
+  .garmin-api,
+  .mini-projects {
+    height: 300px;
+  }
 }
 
 /*----------------------------- What's keeping me busy --------------------------*/
 @media only screen and (max-width: 786px) {
-    .js-animate-4{
-        font-size: 70%;
-    }
+  .js-animate-4 {
+    font-size: 70%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .js-animate-4 {
+    font-size: 100%;
+  }
 
-    .js-animate-4{
-        font-size: 100%;
-    }
+  .pycom,
+  .adruino,
+  .website,
+  .garmin-api,
+  .mini-projects,
+  .book-project {
+    height: 300px;
+    margin-bottom: 10px;
+  }
 
-    .pycom, .adruino, .website, .garmin-api, .mini-projects, .book-project{
-        height: 300px;
-        margin-bottom: 10px;
-    }
+  h1 {
+    font-size: 150%;
+  }
 
-    h1{
-        font-size: 150%;
-    }
+  h2 {
+    font-size: 150%;
+  }
 
-    h2{
-        font-size: 150%;
-    }
-
-    h3{
-        font-size: 150%;
-    }
+  h3 {
+    font-size: 150%;
+  }
 }
-
 
 @media only screen and (max-width: 576px) {
-    .container-fluid{ 
-        font-size: 16px;
-    }
+  .container-fluid {
+    font-size: 16px;
+  }
 
-    .contact{
-        padding: 40px;
-    }
+  .contact {
+    padding: 40px;
+  }
 
-    .blockquote{
-        font-size: 100%;
-    }
+  .blockquote {
+    font-size: 100%;
+  }
 
-    .quotation{
-        background: #212121;
-        padding: 5px;
-    }
+  .quotation {
+    background: #212121;
+    padding: 5px;
+  }
 
-    h1{
-        font-size: 150%;
-    }
+  h1 {
+    font-size: 150%;
+  }
 
-    h2{
-        font-size: 125%;
-    }
+  h2 {
+    font-size: 125%;
+  }
 
-h2:after{
-    width : 100px;
-}
+  h2:after {
+    width: 100px;
+  }
 
+  h4 {
+    font-size: 115%;
+  }
 
-    h4{
-        font-size: 115%;
-    }
-
-
-    nav a{
-        max-width: 150px;
-        margin-right: 50px;
-    }
+  nav a {
+    max-width: 150px;
+    margin-right: 50px;
+  }
 }
